@@ -1,0 +1,13 @@
+@import"./mixin";
+@import"./variable";
+@import"../components/components.home/navbar";
+@import"../components/components.home/header";
+@import"../components/components.home/main";
+@import"../components/components.home/footer";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.home{
+    background:linear-gradient(to top left,white,#78b3ff) ;
+}
