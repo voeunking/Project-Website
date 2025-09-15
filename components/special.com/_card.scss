@@ -1,0 +1,23 @@
+.main-card{
+    display: flex;
+    gap: 50px;
+}
+.main-card .card img{
+    width: 200px;
+    border-radius: 50%;
+    border: 10px solid $main-color;
+    
+}
+.main-card .card{
+    display: flex;
+    align-items: center;
+    @include sadow;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+    line-height: 1.5;
+    h3{
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,10 @@
+@import"./mixin";
+@import"./variable";
+@import"../components/components.home/navbar";
+@import"../components/components.contact/head";
+@import"../components/components.contact/con";
+@import"../components/components.home/footer";
+*{
+    padding: 0px;
+    margin: 0px;
+}

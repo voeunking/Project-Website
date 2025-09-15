@@ -1,0 +1,9 @@
+@mixin sadow {
+    box-shadow: 1px 1px 10px rgba(164, 164, 164, 0.471);;
+
+} 
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

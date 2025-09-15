@@ -1,0 +1,16 @@
+.menu{
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+    .menu-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 10px;
+        border: 1px solid gray;
+        box-shadow: 1px 1px 4px rgba(163, 155, 155, 0.311);
+
+    }
+}

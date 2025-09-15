@@ -1,4 +1,16 @@
+// .main{
+//     height: 100vh;
+//     background-color: $nav-color;
+//     padding:0px 100px;
+// }
 .main{
-    height: 100vh;
-    background-color: $nav-color;
+    @include center;
+    flex-direction: column;
+    .card-main{
+        .price{
+            display: flex;
+            align-items: center;
+        }
+    }
+
 }

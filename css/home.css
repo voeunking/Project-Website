@@ -1,6 +1,6 @@
 nav {
   width: 93.5%;
-  background-color: rgba(74, 167, 255, 0.264);
+  background-color: rgba(76, 168, 255, 0.812);
   box-shadow: 1px 1px 10px rgba(14, 94, 255, 0.386);
   position: fixed;
   display: flex;
@@ -147,7 +147,7 @@ nav .nav-right i:hover {
   transform: rotate(-45deg);
   opacity: 0;
   animation: car 0.5s ease forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .rhombus2 {
@@ -179,8 +179,110 @@ nav .nav-right i:hover {
   }
 }
 .main {
-  height: 100vh;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .card-main .price {
+  display: flex;
+  align-items: center;
+}
+
+.main-card {
+  display: flex;
+  gap: 50px;
+}
+
+.main-card .card img {
+  width: 200px;
+  border-radius: 50%;
+  border: 10px solid rgba(74, 169, 242, 0.7215686275);
+}
+
+.main-card .card {
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(164, 164, 164, 0.471);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+  line-height: 1.5;
+}
+.main-card .card h3 {
+  font-size: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  background: linear-gradient(to left top, rgb(35, 255, 120), rgb(90, 195, 255));
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 30px;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid rgba(74, 169, 242, 0.7215686275);
+  color: rgb(6, 181, 204);
+}
+
+.menu {
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+}
+.menu .menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 10px;
+  border: 1px solid gray;
+  box-shadow: 1px 1px 4px rgba(163, 155, 155, 0.311);
+}
+
+footer {
+  margin: 0px;
+  background: #222;
+  color: #ddd;
+  padding: 40px 100px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.footer-container .footer-column img {
+  width: 150px;
+}
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
 }
 
 * {
