@@ -7,10 +7,15 @@
 @import"../components/special.com/button-card";
 @import"../components/components.home/menu";
 @import"../components/components.home/footer";
+@import"../components/components.home/main-2";
 *{
     padding: 0px;
     margin: 0px;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
 .home{
-    background:linear-gradient(to top left,white,#78b3ff) ;
+    background: #F5F7FA;
 }

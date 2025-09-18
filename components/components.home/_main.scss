@@ -3,14 +3,93 @@
 //     background-color: $nav-color;
 //     padding:0px 100px;
 // }
-.main{
-    @include center;
-    flex-direction: column;
-    .card-main{
-        .price{
-            display: flex;
-            align-items: center;
+.main {
+    .text{
+        text-align: center;
+        line-height: 1.5;
+        h1{
+            font-size: 40px;
         }
     }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 50px;
+        padding: 100px;
+
+        .card-main {
+            border: 1px solid gray;
+            padding: 20px;
+            border-radius: 20px;
+            line-height: 1.5;
+            .icon{
+                i{
+                    color: rgb(250, 162, 10);
+                }
+            }
+
+            .img {
+                display: flex;
+                justify-content: center;
+                background-color: rgba(144, 160, 155, 0.207);
+                border-radius: 20px;
+                padding-bottom: 80px;
+                margin-bottom: 20px;
+
+                img {
+                    width: 200px;
+                }
+            }
+            p{
+                color: rgb(67, 63, 63);
+            }
+            span{
+                font-size: 20px;
+            }
+
+            .price {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i{
+                    font-size: 25px;
+                    padding: 10px;
+                    border-radius: 40px;
+                    background-color: rgba(82, 219, 210, 0.248);
+                    color: rgb(17, 114, 114);
+
+                }
+                .cost{
+                    font-size: 25px;
+                    font-weight: bold;
+                     color: rgb(17, 114, 114);
+                     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }
+
+    }
+
+}
+.discound{
+    height: 50vh;
+        background: linear-gradient(to right bottom,rgba(243, 227, 227, 0.097), rgba(0, 0, 0, 0.875)),
+        url(../../img/image\ copy\ 15.png) center/cover no-repeat;
+        @include center;
+        flex-direction: column;
+        line-height: 2;
+        margin-bottom: 50px;
+        h1{
+            color: white;
+            font-size: 40px;
+            strong{
+                color: red;
+            }
+        }
+        p{
+            color:$main-color;
+
+        }
 
 }
