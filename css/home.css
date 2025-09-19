@@ -427,19 +427,19 @@ button:hover {
 .main-2 .main-card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 100px;
+  gap: 50px;
   padding: 0px 100px;
   height: 50vh;
   margin-bottom: 100px;
 }
 .main-2 .main-card .card1, .main-2 .main-card .card2 {
-  line-height: 2;
+  line-height: 1.5;
   padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: white;
-  background: linear-gradient(to left bottom, rgba(27, 23, 23, 0.662), rgba(15, 13, 13, 0.875)), url(../../img/image\ copy\ 16.png) center/cover no-repeat;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.201), rgba(50, 48, 48, 0.59)), url(../../img/image\ copy\ 16.png) center/cover no-repeat;
 }
 .main-2 .main-card .card1 button, .main-2 .main-card .card2 button {
   margin-top: 50px;
@@ -449,7 +449,7 @@ button:hover {
   font-size: 40px;
 }
 .main-2 .main-card .card2 {
-  background: linear-gradient(to left bottom, rgba(23, 9, 9, 0.782), rgba(21, 20, 20, 0.875)), url(../../img/image\ copy\ 15.png) center/cover no-repeat;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.096), rgba(50, 48, 48, 0.59)), url(../../img/image\ copy\ 15.png) center/cover no-repeat;
 }
 
 * {
