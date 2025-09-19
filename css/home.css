@@ -196,6 +196,9 @@ nav .nav-right i:hover {
   padding: 20px;
   border-radius: 20px;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .card .card-main .icon i {
   color: rgb(250, 162, 10);
@@ -205,11 +208,12 @@ nav .nav-right i:hover {
   justify-content: center;
   background-color: rgba(144, 160, 155, 0.207);
   border-radius: 20px;
-  padding-bottom: 80px;
+  height: 35vh;
   margin-bottom: 20px;
+  padding-bottom: 30px;
 }
 .main .card .card-main .img img {
-  width: 200px;
+  width: 240px;
 }
 .main .card .card-main p {
   color: rgb(67, 63, 63);
