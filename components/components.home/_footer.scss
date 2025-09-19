@@ -1,44 +1,89 @@
+/* Footer Styling */
+.footer {
+  background: #fff;
+  padding: 50px 80px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #ddd;
+}
 
-    footer {
-        margin: 0px;
-      background: #222;
-      color: #ddd;
-      padding: 40px 100px;
-    }
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-    .footer-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px; 
-      .footer-column{
-        img{
-            width: 150px;
-        }
-      }
-    }
+.footer-col {
+  width: 22%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
 
-    .footer-column h3 {
-      color: #fff;
-      margin-bottom: 15px;
-      font-size: 18px;
-    }
+.footer h2.logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 
-    .footer-column ul {
-      list-style: none;
-      padding: 0;
-    }
+.footer h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
 
-    .footer-column ul li {
-      margin-bottom: 10px;
-    }
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
 
-    .footer-column ul li a {
-      text-decoration: none;
-      color: #bbb;
-      transition: color 0.3s;
-    }
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
 
-    .footer-column ul li a:hover {
-      color: #fff;
-    }
+.footer ul li {
+  margin-bottom: 10px;
+}
 
+.footer ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #0073e6;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+}
+
+.app-links img {
+  width: 140px;
+  margin: 5px 0;
+  display: block;
+}
+
+.payments img {
+  width: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
