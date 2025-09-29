@@ -1,7 +1,14 @@
 @import"./mixin";
 @import"./variable";
 @import"../components/components.home/navbar";
+@import"../components/components.home/menu";
+@import"../components/components.home/footer";
+@import"../components/components.about/header";
 *{
     margin: 0px;
     padding: 0px;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
 }

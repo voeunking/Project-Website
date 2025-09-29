@@ -72,6 +72,9 @@ nav .nav-right i:hover {
   flex-direction: column;
   line-height: 2;
 }
+.header h1 {
+  font-size: 50px;
+}
 
 .pro {
   display: flex;

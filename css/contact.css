@@ -63,9 +63,9 @@ nav .nav-right i:hover {
 }
 
 .head {
-  height: 70vh;
+  height: 60vh;
   width: 100%;
-  background: linear-gradient(to right bottom, rgba(243, 227, 227, 0.097), rgba(0, 0, 0, 0.875)), url(../../img/image\ copy\ 5.png) center/cover no-repeat;
+  background: linear-gradient(to right bottom, rgba(20, 18, 18, 0.842), rgba(39, 38, 38, 0.93)), url(../../img/image\ copy\ 5.png) center/cover no-repeat;
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -77,11 +77,11 @@ nav .nav-right i:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 2;
+  line-height: 1.5;
   color: white;
 }
 .head .text-head h1 {
-  font-size: 70px;
+  font-size: 50px;
 }
 .head .text-head h4 {
   font-size: 30px;
@@ -301,4 +301,8 @@ nav .nav-right i:hover {
 * {
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=contact.css.map */
