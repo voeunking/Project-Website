@@ -1,0 +1,16 @@
+@import"./mixin";
+@import"./variable";
+@import"../components/components.home/navbar";
+@import"../components/components.shop/heder";
+@import"../components/components.shop/product";
+@import"../components/special.com/card";
+@import"../components/components.home/footer";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}

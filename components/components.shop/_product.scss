@@ -1,0 +1,17 @@
+.pro{
+    @include center;
+    flex-direction: column;
+    margin-top: 50px;
+    line-height: 2;
+}
+.number{
+    @include center;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        padding: 20px;
+        background-color: $backgroud;
+        color: white;
+        border-radius: 5px;
+    }
+}

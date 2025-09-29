@@ -1,1 +1,258 @@
-/*# sourceMappingURL=shop.css.map */
+nav {
+  width: 93.5%;
+  background-color: rgba(18, 103, 194, 0.9647058824);
+  box-shadow: 1px 1px 10px rgba(189, 190, 192, 0.386);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  z-index: 1;
+}
+
+nav .nav-left img {
+  width: 120px;
+}
+
+nav .nav-center ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+nav .nav-center ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+nav .nav-center ul li a:hover {
+  color: rgb(5, 40, 106);
+}
+
+nav .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+nav .nav-right button {
+  padding: 13px 50px;
+  border-radius: 30px;
+  border: none;
+  background: #1355c0;
+  color: white;
+  font-size: large;
+}
+nav .nav-right button:hover {
+  background-color: #0b69ff;
+  box-shadow: 2px 2px 20px #0b69ff;
+}
+nav .nav-right i {
+  font-size: 24px;
+  color: white;
+}
+nav .nav-right i:hover {
+  color: rgb(5, 40, 106);
+}
+
+#active {
+  color: rgb(5, 40, 106);
+  border-bottom: 4px solid rgb(5, 40, 106);
+  border-radius: 3px;
+  padding: 0px 10px 27px 10px;
+}
+
+.header {
+  height: 60vh;
+  background: linear-gradient(to right bottom, rgba(20, 18, 18, 0.842), rgba(39, 38, 38, 0.93)), url(../../img/image\ copy\ 33.png) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  line-height: 2;
+}
+
+.pro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  line-height: 2;
+}
+
+.number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.number a {
+  text-decoration: none;
+  padding: 20px;
+  background-color: rgba(18, 103, 194, 0.9647058824);
+  color: white;
+  border-radius: 5px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 100px;
+}
+.card .card-main {
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 20px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card-main .icon i {
+  color: rgb(250, 162, 10);
+}
+.card .card-main .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(144, 160, 155, 0.207);
+  border-radius: 20px;
+  height: 35vh;
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+.card .card-main .img img {
+  width: 200px;
+  height: 200px;
+}
+.card .card-main p {
+  color: rgb(67, 63, 63);
+}
+.card .card-main span {
+  font-size: 20px;
+}
+.card .card-main .price {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .card-main .price i {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: rgba(82, 219, 210, 0.248);
+  color: rgb(17, 114, 114);
+}
+.card .card-main .price i:hover {
+  background-color: rgba(6, 105, 98, 0.974);
+  color: white;
+}
+.card .card-main .price .cost {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(17, 114, 114);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Footer Styling */
+.footer {
+  background: #fff;
+  padding: 50px 80px;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #ddd;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  width: 22%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer h2.logo {
+  font-family: "Brush Script MT", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #0073e6;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0073e6;
+}
+
+.app-links img {
+  width: 140px;
+  margin: 5px 0;
+  display: block;
+}
+
+.payments img {
+  width: 50px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #555;
+  border-top: 1px solid #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}/*# sourceMappingURL=shop.css.map */

@@ -1,0 +1,9 @@
+.header{
+    height: 60vh;
+     background: linear-gradient(to right bottom,rgba(20, 18, 18, 0.842), rgba(39, 38, 38, 0.93)),
+        url(../../img/image\ copy\ 33.png) center/cover no-repeat;
+    @include center;
+    color: white;
+    flex-direction: column;
+    line-height: 2;
+}

@@ -27,7 +27,7 @@ nav .nav-center ul li a {
 }
 
 nav .nav-center ul li a:hover {
-  color: rgb(218, 255, 10);
+  color: rgb(5, 40, 106);
 }
 
 nav .nav-right {
@@ -52,12 +52,12 @@ nav .nav-right i {
   color: white;
 }
 nav .nav-right i:hover {
-  color: rgb(218, 255, 10);
+  color: rgb(5, 40, 106);
 }
 
 #active {
-  color: rgb(218, 255, 10);
-  border-bottom: 4px solid rgb(218, 255, 10);
+  color: rgb(5, 40, 106);
+  border-bottom: 4px solid rgb(5, 40, 106);
   border-radius: 3px;
   padding: 0px 10px 27px 10px;
 }
