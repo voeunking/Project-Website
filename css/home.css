@@ -1,3 +1,4 @@
+@charset "UTF-8";
 nav {
   width: 93.5%;
   background-color: rgba(18, 103, 194, 0.9647058824);
@@ -464,4 +465,111 @@ body {
 
 .home {
   background: #F5F7FA;
+}
+
+/* Base styles (desktop-first) you already have above */
+/* Tablet view (≤ 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 20px;
+    width: 100%;
+  }
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+  }
+  .card {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+  }
+  .main-2 .main-card {
+    grid-template-columns: 1fr;
+    padding: 0 50px;
+    height: auto;
+  }
+  .home {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .home-img {
+    margin-top: 30px;
+  }
+}
+/* Mobile view (≤ 768px) */
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 20px;
+    flex-wrap: wrap;
+  }
+  nav .nav-center {
+    display: none;
+    width: 100%;
+    background: #1355c0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+  }
+  nav .nav-center ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  nav .nav-center.active {
+    display: flex;
+  }
+  nav .nav-right {
+    gap: 15px;
+  }
+  .menu {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+    gap: 20px;
+  }
+  .card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: 30px;
+  }
+  .home-container h1 {
+    font-size: 32px;
+  }
+  .home-container h3 {
+    font-size: 24px;
+  }
+  .home-container p {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 8px 20px;
+  }
+  footer .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+}
+/* Extra small devices (≤ 480px) */
+@media (max-width: 480px) {
+  .menu {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .card {
+    padding: 20px;
+  }
+  nav .nav-right button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  .home-img {
+    width: 300px;
+    height: 300px;
+  }
+  .rhombus2 {
+    width: 400px;
+    height: 400px;
+  }
 }/*# sourceMappingURL=home.css.map */
