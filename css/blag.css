@@ -1,6 +1,6 @@
 nav {
   width: 100%;
-  background-color: rgba(18, 103, 194, 0.9647058824);
+  background-color: white;
   box-shadow: 1px 1px 10px rgba(189, 190, 192, 0.386);
   position: fixed;
   display: flex;
@@ -22,7 +22,7 @@ nav .nav-center ul {
 }
 nav .nav-center ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -36,20 +36,21 @@ nav .nav-right {
   gap: 25px;
 }
 nav .nav-right button {
-  padding: 13px 50px;
-  border-radius: 30px;
-  border: none;
-  background: #1355c0;
-  color: white;
-  font-size: large;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  color: gray;
+  padding: 0;
 }
-nav .nav-right button:hover {
-  background-color: #0b69ff;
-  box-shadow: 2px 2px 20px #0b69ff;
+nav .nav-right button i {
+  padding: 5px 10px;
+  background-color: rgb(5, 40, 106);
+  color: rgb(244, 243, 243);
 }
 nav .nav-right i {
   font-size: 24px;
-  color: white;
+  color: black;
 }
 nav .nav-right i:hover {
   color: rgb(5, 40, 106);
@@ -87,12 +88,6 @@ body {
   align-items: center;
 }
 
-.hero-text {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px 30px;
-  border-radius: 10px;
-}
-
 .hero-text h1 {
   font-size: 2.5rem;
 }
@@ -101,14 +96,14 @@ body {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: #ff9800;
+  background: rgb(8, 8, 174);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .hero-text .btn:hover {
-  background: #e68a00;
+  background: rgb(4, 4, 106);
 }
 
 /* Layout */
@@ -129,12 +124,14 @@ body {
   background: #fff;
   border-radius: 8px;
   overflow: hidden;
+  padding: 20px;
   margin-bottom: 25px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post img {
-  width: 100%;
+  width: 50%;
+  border-radius: 10px;
 }
 
 .post-content {
@@ -153,7 +150,7 @@ body {
 .post-content a {
   display: inline-block;
   margin-top: 10px;
-  color: #ff9800;
+  color: rgb(8, 8, 174);
   text-decoration: none;
   font-weight: bold;
 }
@@ -202,7 +199,7 @@ body {
 }
 
 .sidebar-box ul li a:hover {
-  color: #ff9800;
+  color: rgb(8, 8, 174);
 }
 
 /* Search */
@@ -220,7 +217,7 @@ body {
 .search-box button {
   padding: 8px 12px;
   border: none;
-  background: #ff9800;
+  background: rgb(8, 8, 174);
   color: #fff;
   font-weight: bold;
   border-radius: 0 5px 5px 0;
@@ -228,7 +225,7 @@ body {
 }
 
 .search-box button:hover {
-  background: #e68a00;
+  background: rgb(8, 8, 174);
 }
 
 /* Newsletter */
@@ -244,7 +241,7 @@ body {
   width: 100%;
   padding: 10px;
   border: none;
-  background: #ff9800;
+  background: rgb(8, 8, 174);
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
@@ -252,7 +249,7 @@ body {
 }
 
 .newsletter button:hover {
-  background: #e68a00;
+  background: rgb(8, 8, 174);
 }
 
 /* Tags */
@@ -268,8 +265,73 @@ body {
 }
 
 .tags a:hover {
-  background: #ff9800;
+  background: rgb(8, 8, 174);
   color: #fff;
+}
+
+/* Blog Post Image Hover */
+.blog-post img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Blog Post Box Hover */
+.blog-post:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Box Hover */
+.sidebar-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}
+
+/* Sidebar Image Hover */
+.sidebar-box img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Tags Hover (already exists, enhanced) */
+.tags a:hover {
+  background: rgb(8, 8, 174);
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Hero Button Hover (already exists, enhanced) */
+.hero-text .btn:hover {
+  background: rgb(4, 4, 106);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Search Button Hover (already exists, enhanced) */
+.search-box button:hover {
+  background: rgb(4, 4, 106);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+/* Newsletter Button Hover (enhanced) */
+.newsletter button:hover {
+  background: rgb(4, 4, 106);
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #0d387c;
+  border: 2px solid #0d387c;
+  color: white;
 }
 
 /* Footer Styling */

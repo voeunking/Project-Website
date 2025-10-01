@@ -1,129 +1,244 @@
-.con{
+.con {
     display: flex;
     padding: 100px;
     gap: 40px;
-    .con-left{
+
+    .con-left {
         flex: 1;
         display: flex;
         gap: 80px;
         flex-direction: column;
-        .group-icon{
+        transition: all 0.3s ease;
+
+        .group-icon {
             display: flex;
             gap: 50px;
             align-items: center;
-            i{
+
+            i {
                 font-size: 30px;
                 color: rgb(80, 73, 73);
                 padding: 15px;
                 border-radius: 50px;
                 background-color: rgba(0, 255, 255, 0.162);
+                transition: all 0.3s ease;
             }
-            .info{
-                
+
+            i:hover {
+                transform: scale(1.2);
+                background-color: rgba(0, 255, 255, 0.4);
+                color: rgb(0, 80, 80);
+            }
+
+            .info {
                 line-height: 1.5;
-                 p{
+
+                p {
                     font-size: 25px;
+                    transition: color 0.3s ease;
                 }
-                span{
+
+                span {
                     font-size: 20px;
                     color: rgb(94, 90, 90);
+                    transition: color 0.3s ease;
                 }
             }
-            
+
+            &:hover .info {
+                p {
+                    color: rgb(0, 80, 80);
+                }
+
+                span {
+                    color: rgb(0, 60, 60);
+                }
+            }
         }
-        h1{
+
+        h1 {
             font-size: 50px;
+            transition: color 0.3s ease;
         }
-        
+
+        &:hover h1 {
+            color: rgb(0, 180, 180);
+        }
     }
-    .con-right{
-        flex: 1;
-        form{
-            width: 100%;
+
+    .con-right {
+    flex: 1;
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .info {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            .info{
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                line-height: 1.5;
-                input{
-                    padding: 15px;
-                }
-                #text{
-                    padding: 50px;
-                }
-                
+            gap: 10px;
+            line-height: 1.5;
 
-            }
-            button{
-                width: 20%;
+            input {
                 padding: 15px;
+                border: 1px solid rgba(0,0,0,0.2);
                 border-radius: 5px;
-                border: none;
-                background:$icon-color ;
-                color: white;
-                font-size: large;
+                transition: all 0.3s ease;
+                cursor: text;
+
+                &:hover {
+                    border: 2px solid $icon-color;
+                    box-shadow: 0px 4px 15px rgba(0,200,200,0.3);
+                    transform: translateY(-2px);
+                }
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid $icon-color;
+                    box-shadow: 0px 0px 10px rgba(0,200,200,0.5);
+                }
             }
 
-            
+            #text {
+                padding: 50px;
+                transition: all 0.3s ease;
+                
+                &:hover {
+                    border: 2px solid $icon-color;
+                    box-shadow: 0px 4px 15px rgba(0,200,200,0.3);
+                    transform: translateY(-2px);
+                }
+
+                &:focus {
+                    outline: none;
+                    border: 2px solid $icon-color;
+                    box-shadow: 0px 0px 10px rgba(0,200,200,0.5);
+                }
+            }
+        }
+
+        button {
+            width: 20%;
+            padding: 15px;
+            border-radius: 5px;
+            border: none;
+            background: $icon-color;
+            color: white;
+            font-size: large;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+                background: linear-gradient(to right, rgb(25, 227, 112), rgb(0, 213, 255));
+                box-shadow: 0px 5px 15px rgba(0,200,200,0.4);
+            }
         }
     }
-    
 }
-.con-small{
+
+}
+
+.con-small {
     margin-top: 100px;
     height: 30vh;
     background-color: rgba(0, 255, 255, 0.162);
     @include center;
-    .fol{
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: rgba(0, 255, 255, 0.3);
+    }
+
+    .fol {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        p{
+
+        p {
             font-size: 20px;
+            transition: color 0.3s ease;
         }
-      .group-icon{
-        display: flex;
-        gap: 40px;
-          i{
-            font-size: 40px;
-            color: rgb(44, 42, 42);
+
+        &:hover p {
+            color: rgb(0, 80, 80);
         }
-      }
+
+        .group-icon {
+            display: flex;
+            gap: 40px;
+
+            i {
+                font-size: 40px;
+                color: rgb(44, 42, 42);
+                transition: all 0.3s ease;
+            }
+
+            i:hover {
+                transform: scale(1.2);
+                color: rgb(0, 100, 100);
+            }
+        }
     }
 }
+
 .con-smaller {
-    img{
-    width: 100%;
-    
+    img {
+        width: 100%;
+        transition: transform 0.3s ease;
     }
-    .text{
+
+    img:hover {
+        transform: scale(1.05);
+    }
+
+    .text {
         width: 100%;
         height: 50vh;
         flex-direction: column;
         @include center;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                        url(../../img/image\ copy\ 7.png) center/cover no-repeat;
-        button{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                    url(../../img/image\ copy\ 7.png) center/cover no-repeat;
+        transition: all 0.4s ease;
+
+        button {
             padding: 10px 20px;
             border-radius: 30px;
             border: none;
             margin-top: 30px;
             color: white;
-            background: linear-gradient(to left bottom,rgb(0, 213, 255),rgb(25, 227, 112));
+            background: linear-gradient(to left bottom, rgb(0, 213, 255), rgb(25, 227, 112));
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                background: linear-gradient(to left bottom, rgb(25, 227, 112), rgb(0, 213, 255));
+                box-shadow: 0px 5px 20px rgba(0, 200, 200, 0.5);
+            }
         }
-        h1{
+
+        h1 {
             margin-bottom: 20px;
             color: rgb(19, 250, 250);
+            transition: color 0.3s ease, text-shadow 0.3s ease;
         }
-        p{
+
+        h1:hover {
+            color: #ffd700;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        p {
             color: white;
+            transition: color 0.3s ease;
+        }
+
+        p:hover {
+            color: #d0f0ff;
         }
     }
-
 }
-
-

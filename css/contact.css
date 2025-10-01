@@ -1,6 +1,6 @@
 nav {
   width: 93.5%;
-  background-color: rgba(18, 103, 194, 0.9647058824);
+  background-color: white;
   box-shadow: 1px 1px 10px rgba(189, 190, 192, 0.386);
   position: fixed;
   display: flex;
@@ -22,7 +22,7 @@ nav .nav-center ul {
 }
 nav .nav-center ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -36,20 +36,21 @@ nav .nav-right {
   gap: 25px;
 }
 nav .nav-right button {
-  padding: 13px 50px;
-  border-radius: 30px;
-  border: none;
-  background: #1355c0;
-  color: white;
-  font-size: large;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  color: gray;
+  padding: 0;
 }
-nav .nav-right button:hover {
-  background-color: #0b69ff;
-  box-shadow: 2px 2px 20px #0b69ff;
+nav .nav-right button i {
+  padding: 5px 10px;
+  background-color: rgb(5, 40, 106);
+  color: rgb(244, 243, 243);
 }
 nav .nav-right i {
   font-size: 24px;
-  color: white;
+  color: black;
 }
 nav .nav-right i:hover {
   color: rgb(5, 40, 106);
@@ -63,7 +64,7 @@ nav .nav-right i:hover {
 }
 
 .head {
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   background: linear-gradient(to right bottom, rgba(20, 18, 18, 0.842), rgba(39, 38, 38, 0.93)), url(../../img/image\ copy\ 5.png) center/cover no-repeat;
   display: flex;
@@ -97,6 +98,7 @@ nav .nav-right i:hover {
   display: flex;
   gap: 80px;
   flex-direction: column;
+  transition: all 0.3s ease;
 }
 .con .con-left .group-icon {
   display: flex;
@@ -109,19 +111,37 @@ nav .nav-right i:hover {
   padding: 15px;
   border-radius: 50px;
   background-color: rgba(0, 255, 255, 0.162);
+  transition: all 0.3s ease;
+}
+.con .con-left .group-icon i:hover {
+  transform: scale(1.2);
+  background-color: rgba(0, 255, 255, 0.4);
+  color: rgb(0, 80, 80);
 }
 .con .con-left .group-icon .info {
   line-height: 1.5;
 }
 .con .con-left .group-icon .info p {
   font-size: 25px;
+  transition: color 0.3s ease;
 }
 .con .con-left .group-icon .info span {
   font-size: 20px;
   color: rgb(94, 90, 90);
+  transition: color 0.3s ease;
+}
+.con .con-left .group-icon:hover .info p {
+  color: rgb(0, 80, 80);
+}
+.con .con-left .group-icon:hover .info span {
+  color: rgb(0, 60, 60);
 }
 .con .con-left h1 {
   font-size: 50px;
+  transition: color 0.3s ease;
+}
+.con .con-left:hover h1 {
+  color: rgb(0, 180, 180);
 }
 .con .con-right {
   flex: 1;
@@ -140,9 +160,34 @@ nav .nav-right i:hover {
 }
 .con .con-right form .info input {
   padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: text;
+}
+.con .con-right form .info input:hover {
+  border: 2px solid rgb(8, 8, 174);
+  box-shadow: 0px 4px 15px rgba(0, 200, 200, 0.3);
+  transform: translateY(-2px);
+}
+.con .con-right form .info input:focus {
+  outline: none;
+  border: 2px solid rgb(8, 8, 174);
+  box-shadow: 0px 0px 10px rgba(0, 200, 200, 0.5);
 }
 .con .con-right form .info #text {
   padding: 50px;
+  transition: all 0.3s ease;
+}
+.con .con-right form .info #text:hover {
+  border: 2px solid rgb(8, 8, 174);
+  box-shadow: 0px 4px 15px rgba(0, 200, 200, 0.3);
+  transform: translateY(-2px);
+}
+.con .con-right form .info #text:focus {
+  outline: none;
+  border: 2px solid rgb(8, 8, 174);
+  box-shadow: 0px 0px 10px rgba(0, 200, 200, 0.5);
 }
 .con .con-right form button {
   width: 20%;
@@ -152,6 +197,13 @@ nav .nav-right i:hover {
   background: rgb(8, 8, 174);
   color: white;
   font-size: large;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.con .con-right form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, rgb(25, 227, 112), rgb(0, 213, 255));
+  box-shadow: 0px 5px 15px rgba(0, 200, 200, 0.4);
 }
 
 .con-small {
@@ -161,6 +213,10 @@ nav .nav-right i:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
+}
+.con-small:hover {
+  background-color: rgba(0, 255, 255, 0.3);
 }
 .con-small .fol {
   display: flex;
@@ -170,6 +226,10 @@ nav .nav-right i:hover {
 }
 .con-small .fol p {
   font-size: 20px;
+  transition: color 0.3s ease;
+}
+.con-small .fol:hover p {
+  color: rgb(0, 80, 80);
 }
 .con-small .fol .group-icon {
   display: flex;
@@ -178,10 +238,19 @@ nav .nav-right i:hover {
 .con-small .fol .group-icon i {
   font-size: 40px;
   color: rgb(44, 42, 42);
+  transition: all 0.3s ease;
+}
+.con-small .fol .group-icon i:hover {
+  transform: scale(1.2);
+  color: rgb(0, 100, 100);
 }
 
 .con-smaller img {
   width: 100%;
+  transition: transform 0.3s ease;
+}
+.con-smaller img:hover {
+  transform: scale(1.05);
 }
 .con-smaller .text {
   width: 100%;
@@ -191,6 +260,7 @@ nav .nav-right i:hover {
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/image\ copy\ 7.png) center/cover no-repeat;
+  transition: all 0.4s ease;
 }
 .con-smaller .text button {
   padding: 10px 20px;
@@ -199,12 +269,36 @@ nav .nav-right i:hover {
   margin-top: 30px;
   color: white;
   background: linear-gradient(to left bottom, rgb(0, 213, 255), rgb(25, 227, 112));
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.con-smaller .text button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to left bottom, rgb(25, 227, 112), rgb(0, 213, 255));
+  box-shadow: 0px 5px 20px rgba(0, 200, 200, 0.5);
 }
 .con-smaller .text h1 {
   margin-bottom: 20px;
   color: rgb(19, 250, 250);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.con-smaller .text h1:hover {
+  color: #ffd700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 .con-smaller .text p {
+  color: white;
+  transition: color 0.3s ease;
+}
+.con-smaller .text p:hover {
+  color: #d0f0ff;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #0d387c;
+  border: 2px solid #0d387c;
   color: white;
 }
 

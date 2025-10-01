@@ -1,6 +1,6 @@
 nav {
   width: 93.5%;
-  background-color: rgba(18, 103, 194, 0.9647058824);
+  background-color: white;
   box-shadow: 1px 1px 10px rgba(189, 190, 192, 0.386);
   position: fixed;
   display: flex;
@@ -22,7 +22,7 @@ nav .nav-center ul {
 }
 nav .nav-center ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 20px;
 }
 
@@ -36,20 +36,21 @@ nav .nav-right {
   gap: 25px;
 }
 nav .nav-right button {
-  padding: 13px 50px;
-  border-radius: 30px;
-  border: none;
-  background: #1355c0;
-  color: white;
-  font-size: large;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background-color: white;
+  color: gray;
+  padding: 0;
 }
-nav .nav-right button:hover {
-  background-color: #0b69ff;
-  box-shadow: 2px 2px 20px #0b69ff;
+nav .nav-right button i {
+  padding: 5px 10px;
+  background-color: rgb(5, 40, 106);
+  color: rgb(244, 243, 243);
 }
 nav .nav-right i {
   font-size: 24px;
-  color: white;
+  color: black;
 }
 nav .nav-right i:hover {
   color: rgb(5, 40, 106);
@@ -77,12 +78,21 @@ nav .nav-right i:hover {
   padding: 20px 10px;
   border: 1px solid gray;
   box-shadow: 1px 1px 4px rgba(163, 155, 155, 0.311);
+  transition: all 0.3s ease;
 }
 .menu .menu-card img {
   width: 150px;
+  transition: transform 0.3s ease;
 }
 .menu .menu-card p {
   color: rgb(5, 79, 18);
+}
+.menu .menu-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 2px 6px 18px rgba(0, 0, 0, 0.2);
+}
+.menu .menu-card:hover img {
+  transform: scale(1.1);
 }
 .menu .menu-card #free {
   padding: 5px;
@@ -291,8 +301,51 @@ nav .nav-right i:hover {
   margin-bottom: 15px;
 }
 
+/* About Section Image Hover */
+.about .who img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Feature Box Hover */
+.feature:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Feature Image Hover */
+.feature img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Team Member Hover */
+.member:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Team Member Image Hover */
+.member img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #0d387c;
+  border: 2px solid #0d387c;
+  color: white;
+}
+
 .header {
-  height: 60vh;
+  height: 70vh;
   background: linear-gradient(to right bottom, rgba(20, 18, 18, 0.842), rgba(39, 38, 38, 0.93)), url(../../img/image\ copy\ 34.png) center/cover no-repeat;
   flex-direction: column;
   display: flex;

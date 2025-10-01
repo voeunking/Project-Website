@@ -16,12 +16,6 @@ body {
     height: 70vh;
     @include center;
 }
-.hero-text {
-    // transform: translate(-50%, -40%);
-    background: rgba(0,0,0,0.5);
-    padding: 20px 30px;
-    border-radius: 10px;
-}
 .hero-text h1 {
     font-size: 2.5rem;
 }
@@ -29,13 +23,13 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background: #ff9800;
+    background:rgb(8, 8, 174);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
 }
 .hero-text .btn:hover {
-    background: #e68a00;
+    background:rgb(4, 4, 106);
 }
 
 /* Layout */
@@ -54,11 +48,13 @@ body {
     background: #fff;
     border-radius: 8px;
     overflow: hidden;
+    padding: 20px;
     margin-bottom: 25px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .blog-post img {
-    width: 100%;
+    width: 50%;
+    border-radius: 10px;
 }
 .post-content {
     padding: 20px;
@@ -73,7 +69,7 @@ body {
 .post-content a {
     display: inline-block;
     margin-top: 10px;
-    color: #ff9800;
+    color:rgb(8, 8, 174);
     text-decoration: none;
     font-weight: bold;
 }
@@ -106,7 +102,7 @@ body {
     text-decoration: none;
     color: #444;
 }
-.sidebar-box ul li a:hover { color: #ff9800; }
+.sidebar-box ul li a:hover { color:rgb(8, 8, 174); }
 
 /* Search */
 .search-box {
@@ -121,13 +117,13 @@ body {
 .search-box button {
     padding: 8px 12px;
     border: none;
-    background: #ff9800;
+    background: rgb(8, 8, 174);
     color: #fff;
     font-weight: bold;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
-.search-box button:hover { background: #e68a00; }
+.search-box button:hover { background:rgb(8, 8, 174); }
 
 /* Newsletter */
 .newsletter input {
@@ -141,13 +137,13 @@ body {
     width: 100%;
     padding: 10px;
     border: none;
-    background: #ff9800;
+    background: rgb(8, 8, 174);
     color: #fff;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
 }
-.newsletter button:hover { background: #e68a00; }
+.newsletter button:hover { background: rgb(8, 8, 174); }
 
 /* Tags */
 .tags a {
@@ -160,4 +156,60 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
 }
-.tags a:hover { background: #ff9800; color: #fff; }
+.tags a:hover { background:rgb(8, 8, 174); color: #fff; }
+/* Blog Post Image Hover */
+.blog-post img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Blog Post Box Hover */
+.blog-post:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Sidebar Box Hover */
+.sidebar-box:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
+}
+
+/* Sidebar Image Hover */
+.sidebar-box img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Tags Hover (already exists, enhanced) */
+.tags a:hover {
+    background: rgb(8, 8, 174);
+    color: #fff;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Hero Button Hover (already exists, enhanced) */
+.hero-text .btn:hover {
+    background: rgb(4, 4, 106);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Search Button Hover (already exists, enhanced) */
+.search-box button:hover {
+    background: rgb(4, 4, 106);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+/* Newsletter Button Hover (enhanced) */
+.newsletter button:hover {
+    background: rgb(4, 4, 106);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+}
