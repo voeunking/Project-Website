@@ -12,8 +12,12 @@
 }
 @media(max-width:767px){
     .header{
+        height: 50vh;
         h1{
-            font-size: 28px;
+            font-size: 25px;
+        }
+        p{
+            text-align: center;
         }
     }
 }

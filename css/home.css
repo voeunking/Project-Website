@@ -243,35 +243,7 @@ nav .nav-right i:hover {
   .home-container h3 {
     font-size: 30px;
   }
-  .home-container p {
-    font-size: 16px;
-    margin: 15px 0 30px;
-    font-family: "Montserrat", sans-serif;
-    line-height: 2;
-    color: rgb(65, 63, 63);
-    font-weight: bold;
-  }
-  .btn {
-    display: inline-block;
-    padding: 10px 28px;
-    background: #0d387c;
-    border: 2px solid #0d387c;
-    border-radius: 6px;
-    font-size: 16px;
-    color: white;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 400;
-    transition: 0.5s;
-  }
-  .btn:hover {
-    background: transparent;
-    color: blue;
-    border: 1 solid rgb(155, 178, 255);
-    box-shadow: 1px 1px 20px rgb(39, 111, 255);
-  }
   .home-img .rhombus {
-    position: absolute;
     width: 150%;
     height: 50%;
     right: -20%;
@@ -283,6 +255,42 @@ nav .nav-right i:hover {
   }
   .rhombus2 {
     width: 500px;
+  }
+}
+@media (max-width: 767px) {
+  .home {
+    height: 60vh;
+  }
+  .home-container {
+    max-width: 630px;
+  }
+  .home-container h1 {
+    font-size: 30px;
+  }
+  .home-container h3 {
+    font-size: 20px;
+  }
+  .home-img .rhombus {
+    width: 70%;
+    height: 40%;
+    right: -20%;
+  }
+  .rhombus img {
+    bottom: -70px;
+    left: -50px;
+    width: 120%;
+  }
+  .rhombus2 {
+    width: 300px;
+    height: 300px;
+  }
+  .home-container p {
+    display: none;
+  }
+  .btn {
+    padding: 5px 10px;
+    font-size: small;
+    margin-top: 30px;
   }
 }
 .main .text {
@@ -318,6 +326,19 @@ nav .nav-right i:hover {
   .discound h1 {
     color: white;
     font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .discound {
+    height: 30vh;
+  }
+  .discound h1 {
+    line-height: 1;
+    text-align: center;
+    font-size: 20px;
+  }
+  .discound button {
+    margin-top: 30px;
   }
 }
 .card {
@@ -712,6 +733,16 @@ button {
   .main-2 .main-card .card1:hover button,
   .main-2 .main-card .card2:hover button {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .main-2 {
+    height: 80vh;
+  }
+  .main-2 .main-card {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 * {

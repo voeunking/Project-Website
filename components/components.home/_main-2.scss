@@ -76,7 +76,6 @@
                     font-size: 40px;
                     transition: color 0.3s ease, text-shadow 0.3s ease;
                 }
-
                 // hover effect
                 &:hover {
                     display: none;
@@ -91,6 +90,20 @@
                     }
                 }
             }
+
+
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .main-2 {
+        height: 80vh;
+        .main-card {
+
+            gap: 20px;
+            display: grid;
+            grid-template-columns: auto;
 
 
         }
