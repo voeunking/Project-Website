@@ -82,3 +82,38 @@
         }
     }
 }
+
+@media(max-width:1023px){
+    .card{
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+        .card-main{
+            img{
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .card{
+        padding: 20px;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        .card-main{
+            padding: 10px;
+
+            p{
+                display: none;
+            }
+            .img{
+                padding: 0px;
+                height: 20vh;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            
+        }
+    }
+}

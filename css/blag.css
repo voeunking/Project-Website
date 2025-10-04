@@ -63,6 +63,57 @@ nav .nav-right i:hover {
   padding: 0px 10px 27px 10px;
 }
 
+@media (max-width: 1023px) {
+  nav {
+    padding: 0px 20px;
+    width: 100%;
+  }
+  nav .nav-center ul {
+    gap: 20px;
+  }
+  nav .nav-right i:nth-child(1) {
+    display: none;
+  }
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 30px;
+  }
+  .about .container .who {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .container .who img {
+    width: 80%;
+    margin: auto;
+  }
+  .features {
+    align-items: center;
+  }
+  .team-members {
+    gap: 15px;
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    padding: 10px;
+    width: 100%;
+  }
+  nav .nav-left img {
+    width: 90px;
+  }
+  nav .nav-center ul {
+    gap: 10px;
+  }
+  nav .nav-center ul li a {
+    font-size: small;
+  }
+  nav .nav-right {
+    display: none;
+  }
+  #active {
+    border: none;
+  }
+}
 /* Reset */
 * {
   margin: 0;
@@ -326,6 +377,15 @@ body {
   transition: all 0.3s ease;
 }
 
+@media (max-width: 767px) {
+  .hero-text h1 {
+    font-size: 25px;
+  }
+  .hero-text .btn {
+    margin-top: 30px;
+    font-size: 10px;
+  }
+}
 button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -422,4 +482,40 @@ button {
   font-size: 14px;
   color: #555;
   border-top: 1px solid #ddd;
+}
+
+@media (max-width: 1023px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 200px;
+         column-gap: 200px;
+  }
+  .footer-col {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer-container {
+    gap: 10px;
+  }
+  .footer-container .footer-col ul li a {
+    font-size: small;
+  }
+  .footer-container .footer-col .logo {
+    font-size: 15px;
+  }
+  .footer-container .footer-col p {
+    font-size: small;
+  }
+  .payments img {
+    width: 40px;
+  }
+  .header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=blag.css.map */

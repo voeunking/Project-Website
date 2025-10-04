@@ -60,3 +60,22 @@
         }
     }
 }
+@media(max-width:1023px){
+    .menu {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 30px;
+  }
+}
+@media(max-width:767px){
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .menu-card{
+            img {
+            width: 100px;
+        }
+        }
+    }
+
+
+}

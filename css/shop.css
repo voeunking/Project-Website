@@ -63,6 +63,57 @@ nav .nav-right i:hover {
   padding: 0px 10px 27px 10px;
 }
 
+@media (max-width: 1023px) {
+  nav {
+    padding: 0px 20px;
+    width: 97%;
+  }
+  nav .nav-center ul {
+    gap: 20px;
+  }
+  nav .nav-right i:nth-child(1) {
+    display: none;
+  }
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 30px;
+  }
+  .about .container .who {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .container .who img {
+    width: 80%;
+    margin: auto;
+  }
+  .features {
+    align-items: center;
+  }
+  .team-members {
+    gap: 15px;
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    padding: 10px;
+    width: 95%;
+  }
+  nav .nav-left img {
+    width: 90px;
+  }
+  nav .nav-center ul {
+    gap: 10px;
+  }
+  nav .nav-center ul li a {
+    font-size: small;
+  }
+  nav .nav-right {
+    display: none;
+  }
+  #active {
+    border: none;
+  }
+}
 .header {
   height: 70vh;
   background: linear-gradient(to right bottom, rgba(20, 18, 18, 0.842), rgba(39, 38, 38, 0.93)), url(../../img/image\ copy\ 33.png) center/cover no-repeat;
@@ -173,6 +224,36 @@ nav .nav-right i:hover {
   transform: scale(1.1);
 }
 
+@media (max-width: 1023px) {
+  .card {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card .card-main img {
+    padding-bottom: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .card {
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .card .card-main {
+    padding: 10px;
+  }
+  .card .card-main p {
+    display: none;
+  }
+  .card .card-main .img {
+    padding: 0px;
+    height: 20vh;
+  }
+  .card .card-main .img img {
+    width: 100px;
+    height: 100px;
+  }
+}
 button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -271,6 +352,41 @@ button {
   border-top: 1px solid #ddd;
 }
 
+@media (max-width: 1023px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 200px;
+         column-gap: 200px;
+  }
+  .footer-col {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer-container {
+    gap: 10px;
+  }
+  .footer-container .footer-col ul li a {
+    font-size: small;
+  }
+  .footer-container .footer-col .logo {
+    font-size: 15px;
+  }
+  .footer-container .footer-col p {
+    font-size: small;
+  }
+  .payments img {
+    width: 40px;
+  }
+  .header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 * {
   margin: 0;
   padding: 0;

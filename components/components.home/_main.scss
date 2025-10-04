@@ -1,33 +1,49 @@
-
 .main {
-    .text{
+    .text {
         text-align: center;
         line-height: 1.5;
-        h1{
+
+        h1 {
             font-size: 40px;
         }
     }
-  
+
 
 }
-.discound{
-    height: 50vh;
-        background: linear-gradient(to right bottom,rgba(243, 227, 227, 0.097), rgba(0, 0, 0, 0.875)),
-        url(../../img/image\ copy\ 15.png) center/cover no-repeat;
-        @include center;
-        flex-direction: column;
-        line-height: 2;
-        margin-bottom: 50px;
-        h1{
-            color: white;
-            font-size: 40px;
-            strong{
-                color: red;
-            }
-        }
-        p{
-            color:white;
 
+.discound {
+    height: 50vh;
+    background: linear-gradient(to right bottom, rgba(243, 227, 227, 0.097), rgba(0, 0, 0, 0.875)),
+        url(../../img/image\ copy\ 15.png) center/cover no-repeat;
+    @include center;
+    flex-direction: column;
+    line-height: 2;
+    margin-bottom: 50px;
+
+    h1 {
+        color: white;
+        font-size: 40px;
+
+        strong {
+            color: red;
         }
+    }
+
+    p {
+        color: white;
+
+    }
+
+}
+
+@media(max-width:1023px) {
+
+    .discound {
+        h1 {
+            color: white;
+            font-size: 30px;
+        }
+
+    }
 
 }

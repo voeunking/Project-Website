@@ -63,6 +63,57 @@ nav .nav-right i:hover {
   padding: 0px 10px 27px 10px;
 }
 
+@media (max-width: 1023px) {
+  nav {
+    padding: 0px 20px;
+    width: 97%;
+  }
+  nav .nav-center ul {
+    gap: 20px;
+  }
+  nav .nav-right i:nth-child(1) {
+    display: none;
+  }
+  .menu {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px 30px;
+  }
+  .about .container .who {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .container .who img {
+    width: 80%;
+    margin: auto;
+  }
+  .features {
+    align-items: center;
+  }
+  .team-members {
+    gap: 15px;
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    padding: 10px;
+    width: 95%;
+  }
+  nav .nav-left img {
+    width: 90px;
+  }
+  nav .nav-center ul {
+    gap: 10px;
+  }
+  nav .nav-center ul li a {
+    font-size: small;
+  }
+  nav .nav-right {
+    display: none;
+  }
+  #active {
+    border: none;
+  }
+}
 .head {
   height: 70vh;
   width: 100%;
@@ -88,6 +139,11 @@ nav .nav-right i:hover {
   font-size: 30px;
 }
 
+@media (max-width: 767px) {
+  .head .text-head h1 {
+    font-size: 40px;
+  }
+}
 .con {
   display: flex;
   padding: 100px;
@@ -190,7 +246,7 @@ nav .nav-right i:hover {
   box-shadow: 0px 0px 10px rgba(0, 200, 200, 0.5);
 }
 .con .con-right form button {
-  width: 20%;
+  width: 100%;
   padding: 15px;
   border-radius: 5px;
   border: none;
@@ -294,6 +350,50 @@ nav .nav-right i:hover {
   color: #d0f0ff;
 }
 
+@media (max-width: 1023px) {
+  .con {
+    padding: 50px;
+  }
+  .con .con-left .group-icon {
+    gap: 10px;
+  }
+  .con .con-left h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .con {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .con .con-left {
+    gap: 10px;
+  }
+  .con .con-left .group-icon {
+    gap: 10px;
+  }
+  .con .con-left .group-icon .info span {
+    font-size: 18px;
+  }
+  .con .con-left h1 {
+    font-size: 30px;
+  }
+  .con-small {
+    height: 20vh;
+  }
+  .con-small .fol p {
+    font-size: 15px;
+  }
+  .con-small .fol .group-icon {
+    gap: 30px;
+  }
+  .con-small .fol .group-icon i {
+    font-size: 30px;
+  }
+  .text h1 {
+    font-size: 20px;
+  }
+}
 button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -392,6 +492,41 @@ button {
   border-top: 1px solid #ddd;
 }
 
+@media (max-width: 1023px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 200px;
+         column-gap: 200px;
+  }
+  .footer-col {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 20px;
+  }
+  .footer-container {
+    gap: 10px;
+  }
+  .footer-container .footer-col ul li a {
+    font-size: small;
+  }
+  .footer-container .footer-col .logo {
+    font-size: 15px;
+  }
+  .footer-container .footer-col p {
+    font-size: small;
+  }
+  .payments img {
+    width: 40px;
+  }
+  .header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 * {
   padding: 0px;
   margin: 0px;

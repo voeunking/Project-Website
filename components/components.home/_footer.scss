@@ -87,3 +87,58 @@
   color: #555;
   border-top: 1px solid #ddd;
 }
+
+@media (max-width: 1023px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 200px;
+
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+}
+@media(max-width:767px){
+    .footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    gap: 10px;
+    // display: flex;
+    // flex-direction: column;
+    // text-align: center;
+    .footer-col{
+      ul {
+        li{
+          a{
+            font-size: small;
+          }
+        }
+      }
+      .logo{
+        font-size: 15px;
+
+      }
+      p{
+        font-size: small;
+      }
+    }
+  }
+
+  // .app-links img {
+  //   width: 120px;
+  // }
+
+  .payments img {
+    width: 40px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+}
