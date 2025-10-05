@@ -272,8 +272,12 @@
                 gap: 10px;
 
                 .info {
+                    p{
+                        font-size: 15px;
+                    }
+
                     span {
-                        font-size: 18px;
+                        font-size: small;
                     }
                 }
             }

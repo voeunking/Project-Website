@@ -69,8 +69,14 @@
 @media(max-width:767px){
     .menu{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
         .menu-card{
+            gap: 0px;
+            p{
+                font-size: small;
+               
+            }
             img {
             width: 100px;
         }

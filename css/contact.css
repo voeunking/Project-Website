@@ -372,8 +372,11 @@ nav .nav-right i:hover {
   .con .con-left .group-icon {
     gap: 10px;
   }
+  .con .con-left .group-icon .info p {
+    font-size: 15px;
+  }
   .con .con-left .group-icon .info span {
-    font-size: 18px;
+    font-size: small;
   }
   .con .con-left h1 {
     font-size: 30px;
